@@ -9,6 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { VideoUploadComponent } from './video-upload/video-upload.component';
 import { SignupUserComponent } from './signup-user/signup-user.component';
+import { DisplayVideoComponent } from './display-video/display-video.component';
+import { AddVideoComponent } from './add-video/add-video.component';
 
 
 
@@ -19,7 +21,9 @@ import { SignupUserComponent } from './signup-user/signup-user.component';
     FooterComponent,
     LoginUserComponent,
     VideoUploadComponent,
-    SignupUserComponent
+    SignupUserComponent,
+    DisplayVideoComponent,
+    AddVideoComponent
   ],
   imports: [
     CommonModule,
