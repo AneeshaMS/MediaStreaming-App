@@ -1,3 +1,6 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 <app-navbar></app-navbar>
 
     <!-- main content -->
@@ -96,6 +99,27 @@
 										<div class="form__gallery">
 											<label id="gallery1" for="form__gallery-upload">Upload photos</label>
 											<input data-name="#gallery1" id="form__gallery-upload" name="gallery" class="form__gallery-upload" type="file" accept=".png, .jpg, .jpeg" multiple>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="form__group">
+											<mat-form-field class="example-chip-list" appearance="fill">
+												<!-- <mat-label>Favorite Fruits</mat-label> -->
+												<mat-chip-list #chipList aria-label="Fruit selection">
+												  <mat-chip *ngFor="let tag of tags" (removed)="remove(tag)">
+													{{tag.name}}
+													<button matChipRemove>
+													  <mat-icon>cancel</mat-icon>
+													</button>
+												  </mat-chip>
+												  <input placeholder="+Tags"
+														 [matChipInputFor]="chipList"
+														 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+														 [matChipInputAddOnBlur]="addOnBlur"
+														 (matChipInputTokenEnd)="add($event)">
+												</mat-chip-list>
+											  </mat-form-field>
 										</div>
 									</div>
 								</div>
