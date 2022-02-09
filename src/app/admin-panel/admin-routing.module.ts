@@ -8,6 +8,11 @@ import { EditVideoComponent } from './edit-video/edit-video.component';
 import { ViewVideoComponent } from './view-video/view-video.component';
 import { RatingsComponent } from './ratings/ratings.component';
 import { UsersListComponent } from './users-list/users-list.component';
+import { CommentsComponent } from './comments/comments.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { TagsListComponent } from './tags-list/tags-list.component';
+
+
 
 const routes: Routes = [
   {
@@ -41,6 +46,18 @@ const routes: Routes = [
 {
   path:"users",
   component:UsersListComponent
+},
+{
+  path:"comments",
+  component:CommentsComponent
+},
+{
+  path:"edit-user",
+  component:EditUserComponent
+},
+{
+  path:"tags",
+  component:TagsListComponent
 }
 ];
 
