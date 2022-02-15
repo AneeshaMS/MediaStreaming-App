@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { DisplayVideoComponent } from './display-video/display-video.component';
-import { VideoUploadComponent } from './video-upload/video-upload.component';
+import { AddVideoComponent } from './add-video/add-video.component';
+// import { VideoUploadComponent } from './video-upload/video-upload.component';
 
 const routes: Routes = [
   {
@@ -20,8 +21,11 @@ const routes: Routes = [
   },
   {
     path:"new-video",
-    component:VideoUploadComponent
-  }
+    component:AddVideoComponent
+  },
+  {
+    path: "singlevideo",
+  component:DisplayVideoComponent}
 ];
 
 @NgModule({

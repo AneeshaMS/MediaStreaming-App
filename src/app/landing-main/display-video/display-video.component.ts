@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LandingServiceService} from '../landing-service.service'
 
 @Component({
   selector: 'app-display-video',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-video.component.css']
 })
 export class DisplayVideoComponent implements OnInit {
-
-  constructor() { }
+ 
+  singleVideo:any
+  constructor(private Serve:LandingServiceService) { }
 
   ngOnInit(): void {
+    let videoView = localStorage.getItem("singleVid");
+    this.Serve.getSingleVid(videoView).subscribe((data) => {
+      this.singleVideo = data
+    })
   }
 
 }

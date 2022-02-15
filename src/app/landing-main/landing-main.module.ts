@@ -11,6 +11,9 @@ import { VideoUploadComponent } from './video-upload/video-upload.component';
 import { SignupUserComponent } from './signup-user/signup-user.component';
 import { DisplayVideoComponent } from './display-video/display-video.component';
 import { AddVideoComponent } from './add-video/add-video.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import {FormsModule} from '@angular/forms'
+
 
 
 
@@ -23,14 +26,17 @@ import { AddVideoComponent } from './add-video/add-video.component';
     VideoUploadComponent,
     SignupUserComponent,
     DisplayVideoComponent,
-    AddVideoComponent
+    AddVideoComponent,
+    
   ],
   imports: [
     CommonModule,
     LandingMainRoutingModule,
     NgbPaginationModule,
     NgbAlertModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class LandingMainModule { }

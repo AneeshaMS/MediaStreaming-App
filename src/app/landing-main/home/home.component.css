@@ -28,3 +28,14 @@ select{
     width: 0px;
     background: transparent; /* make scrollbar transparent */
   }
+  .btn-genre{
+      background-color: #065baa;
+      border-radius: 25px;
+      font-size: 12px;
+      text-align: center;
+      padding: 5px;
+      font-weight: bold;  
+  }
+  .btn-genre:hover{
+    background-color: #01944a;
+}
