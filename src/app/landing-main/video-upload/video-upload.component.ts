@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+
+export interface Tag {
+  name: string;
+}
+
 @Component({
   selector: 'app-video-upload',
   templateUrl: './video-upload.component.html',

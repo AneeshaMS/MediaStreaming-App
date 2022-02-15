@@ -9,19 +9,3 @@
 .main__table-btns{
     margin-left: -30px;
 }
-.modal {
-    
-    position: absolute;
-    float: left;
-    left: 60%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-   
-  }
-  .modal-title{
-      color:white;
-  }
-  .modal-body{
-      color: white;
-  }
- 
